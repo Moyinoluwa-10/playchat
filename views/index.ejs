@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="overlay-container">
+        <h2 class="overlay-heading">Welcome</h2>
+        <form class="overlay-form">
+          <label for="name" class="overlay-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            class="overlay-input"
+            required
+          />
+
+          <button type="submit" class="overlay-button">Continue</button>
+        </form>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-container">
+        <h1 class="header-heading">Chat App</h1>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="#" class="header-link">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="/chat" class="header-link">Chat</a>
+          </li>
+          <li class="header-item">
+            <a href="/game" class="header-link">Game</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main"></main>
+    <footer class="footer">
+      <p class="footer-text">&copy; All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="/script/index.js"></script>
+  </body>
+</html>

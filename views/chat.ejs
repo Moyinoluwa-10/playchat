@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles/chat.css" />
+    <!-- Google Font -->
+    <!-- Favicon and Manifest -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8e4fb64db4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PlayChat - Chat</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h2 class="header-heading">PlayChat</h2>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="#" class="header-link">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="/chat" class="header-link">Chat</a>
+          </li>
+          <li class="header-item">
+            <a href="/game" class="header-link">Game</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div id="sidebar" class="sidebar">
+        <div id="me" class="user-profile">
+          <p id="username" class="user-name">Moyin</p>
+        </div>
+
+        <ul id="user-list" class="user-list">
+          <!-- <li class="user">
+            <img src="assets/dp.jpg" alt="user-dp" class="user-img" />Tunde
+            <span class="user--unread">1</span>
+          </li> -->
+        </ul>
+      </div>
+
+      <div id="chat" class="chat">
+        <div id="current-chat" class="current-chat">
+          <div id="back" class="back">
+            <i class="fa-solid fa-arrow-left back-arrow"></i>
+          </div>
+          <div id="current-user" class="current-user">Tunde</div>
+        </div>
+
+        <ul id="msg-list">
+          <!-- <li class="msg">
+            <p class="msg--text">Hey there</p>
+            <span class="msg--timestamp">3:42 pm</span>
+          </li> -->
+        </ul>
+
+        <form id="form" class="form">
+          <input
+            type="text"
+            placeholder="New message"
+            id="msg-inp"
+            class="msg-inp"
+          />
+          <button id="send" class="btn-send">Send</button>
+        </form>
+      </div>
+    </main>
+  </body>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="scripts/chat.js"></script>
+</html>
